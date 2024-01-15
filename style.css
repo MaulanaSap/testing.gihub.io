@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Shadows+Into+Light&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+}
+
+/* Navigation */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  z-index: 1;
+}
+header img {
+  position: relative;
+  max-width: 70px;
+}
+header ul {
+  position: relative;
+  display: flex;
+  list-style: none;
+}
+header ul li a {
+  display: inline-block;
+  color: #333;
+  font-weight: 400;
+  margin-left: 40px;
+}
+
+/* Content Home */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.text-content {
+  position: relative;
+  max-width: 600px;
+}
+.text-content h2 {
+  color: #333;
+  font-size: 3.5em;
+  line-height: 1.4em;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.text-content h2 span {
+  font-weight: 700;
+  color: #017143;
+  font-size: 1.2em;
+}
+.text-content p {
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.text-content a {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #017143;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  border-radius: 40px;
+}
+.img-list {
+  display: flex;
+  justify-content: flex-start;
+  width: 300px;
+  margin-right: 50px;
+  margin-top: 77px;
+}
+.img-list img {
+  width: 100%;
+  height: 100%;
+}
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  display: flex;
+  list-style: none;
+  transform: translateX(-50%);
+}
+.thumb li {
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+.thumb li img {
+  max-width: 50px;
+}
+
+.sci {
+  position: absolute;
+  top: 50%;
+  right: -0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+.sci li {
+  list-style: none;
+}
+.sci li a {
+  display: inline-block;
+  margin: 5px 0;
+  transform: scale(0.6);
+}
+
+/* Background Green */
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #017143;
+  clip-path: circle(630px at right 800px);
+}
